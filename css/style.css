@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    font-family: Montserrat, sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+
+    align-self: flex-start;
+    font-size: 3rem;
+    font-weight: 999;
+}
+
+p{
+    margin-bottom: 10rem;
+    font-size: 2rem;
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f2f2f2;
+}
+
+.carta {
+    width: 250px;
+    height: 150px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: aparecer 0.8s ease-out;
+    transition: transform 0.25s ease;
+}
+
+.corazon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: red;
+    transform: rotate(-45deg);
+
+    animation: latido 3s infinite;
+}
+
+.corazon::before,
+.corazon::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: red;
+    border-radius: 50%;
+}
+
+.corazon::before {
+    top: -25px;
+    left: 0;
+}
+
+.corazon::after {
+    left: 25px;
+    top: 0;
+}
+
+.subtitol{
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+@keyframes aparecer {
+    from {
+        transform: scale(0.8) translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes latido {
+    0%, 100% {
+        transform: rotate(-45deg) scale(1);
+    }
+    50% {
+        transform: rotate(-45deg) scale(1.2);
+    }
+}
+
+.carta:hover {
+    animation: none;
+    transform: scale(1.05);
+}
+
+.flor-wrap {
+    position: relative;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tallo {
+    width: 7px;
+    height: 140px;
+    background: #4a8c3f;
+    border-radius: 4px;
+    transform-origin: bottom center;
+    transform: scaleY(0);
+    animation: crecerTallo 1.2s cubic-bezier(.4,0,.2,1) forwards;
+
+    z-index: 1;
+}
+
+.hoja {
+    position: absolute;
+    width: 28px;
+    height: 16px;
+    background: #5aaa4e;
+    border-radius: 50% 0 50% 0;
+    transform: scale(0);
+    z-index: 2;
+}
+
+.hoja-izq {
+    bottom: 55px;
+    left: -22px;
+    transform-origin: right center;
+    animation: crecerHoja 0.5s ease forwards;
+    animation-delay: 1s;
+    z-index: 2;
+}
+
+.hoja-der {
+    bottom: 35px;
+    right: -22px;
+    rotate: 180deg;
+    transform-origin: left center;
+    transform: scaleX(-1) scale(0);
+    animation: crecerHojaDer 0.5s ease forwards;
+    animation-delay: 1.3s;
+    z-index: 2;
+}
+
+.cabeza {
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    transform: scale(0);
+    animation: crecerCabeza 0.6s cubic-bezier(.34,1.56,.64,1) forwards;
+    animation-delay: 1.5s;
+    z-index: 2;
+}
+
+.petalo {
+    position: absolute;
+    width: 24px;
+    height: 36px;
+    background: #ff0000;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    margin-left: -12px;
+    margin-top: -18px;
+    transform-origin: center bottom;
+    z-index: 2;
+}
+
+.centro {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background: #f5c842;
+    border-radius: 50%;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    animation: latidoCentro 2s ease-in-out infinite;
+    animation-delay: 2.2s;
+    z-index: 3;
+}
+
+@keyframes crecerTallo { to { transform: scaleY(1); } }
+@keyframes crecerHoja { to { transform: scale(1); } }
+@keyframes crecerHojaDer { to { transform: scaleX(-1) scale(1); } }
+@keyframes crecerCabeza { to { transform: scale(1); } }
+
+.subtitol2{
+    position: absolute;
+
+    bottom: 15%;
+    left: 37%;
+
+    width: 35rem;
+}
+

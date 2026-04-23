@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bon Sant Jordi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+
+
+
+    <main>
+        <h1>Bon Sant Jordi</h1>
+        <p>
+            Avui és Sant Jordi, i per desgràcia, el passem separats. Això vol dir que no te puc <br>
+            regalar una rosa, així mateix, he fet això per tu mi amor
+        </p>
+
+        <div class="carta" id="carta">
+            <div class="corazon"></div>
+        </div>
+
+        <p class="subtitol">Fes click a sa carta per obrir</p>
+
+    </main>
+
+    <script src="/js/script.js"></script>
+
+</body>
+</html>

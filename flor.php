@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bon Sant Jordi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="flor-wrap">
+    <div class="cabeza">
+        <div class="petalo" style="transform:translateY(-28px) rotate(0deg)"></div>
+        <div class="petalo" style="transform:translateY(-28px) rotate(45deg)"></div>
+        <div class="petalo" style="transform:translateY(-28px) rotate(90deg)"></div>
+        <div class="petalo" style="transform:translateY(-28px) rotate(135deg)"></div>
+        <div class="petalo" style="transform:translateY(-28px) rotate(180deg)"></div>
+        <div class="petalo" style="transform:translateY(-28px) rotate(225deg)"></div>
+        <div class="petalo" style="transform:translateY(-28px) rotate(270deg)"></div>
+        <div class="petalo" style="transform:translateY(-28px) rotate(315deg)"></div>
+        <div class="centro"></div>
+    </div>
+    <div class="tallo">
+        <div class="hoja hoja-izq"></div>
+        <div class="hoja hoja-der"></div>
+    </div>
+
+</div>
+<p class="subtitol2">Molt bon Sant Jordi mi amooooor</p>
+</body>
+</html>
